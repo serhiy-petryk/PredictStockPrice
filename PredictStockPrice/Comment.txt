@@ -1,0 +1,8 @@
+1. Use Singular Spectrum Analysis (https://www.alglib.net/)
+	Example: Google search: "C# singular spectrum analysis stock price example"
+2. ML.Net (using Singular Spectrum Analysis), others: https://github.com/Schentrup-Software/Automatic-Stock-Trader 
+3. ML.Net (https://github.com/johanromero/StockPredictor and others)
+4. Recurrent neural networks (RNNs) (https://github.com/zhongkaifu/RNNSharp https://www.c-sharpcorner.com/article/implementing-an-rnn-in-c-sharp-for-sequence-prediction/ and others)
+5. The aim of this project is to predict the share prices of companies listed on the New York Stock Exchange using Python and deep learning.
+	https://github.com/albertomonari/New-York-Stock-Price-Prediction
+	Instruction: https://github.com/albertomonari/New-York-Stock-Price-Prediction/blob/main/NY%20Stock%20Price%20Prediction.html
