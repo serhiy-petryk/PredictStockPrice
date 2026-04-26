@@ -1,0 +1,156 @@
+SQL:
+====
+select a.*, c.Type, c.Exchange, c.Name from
+(select Symbol, ROUND(AVG([low]*[volume])/1000000,0) Turnover, AVG(TradeCount)/1000 TradeCountThs
+from DayPolygon 
+where year(date) between 2020 and 2025
+and [close]>=5 and [low]*[volume]>=50000000 and TradeCount>=10000
+group by symbol
+having count(*)=1508) a
+left join splits b on a.Symbol=b.Symbol and year(b.date) between 2020 and 2025
+inner join SymbolsPolygon c on a.Symbol=c.Symbol and c.[To] is null and c.IsTest is null
+where b.Symbol is null
+
+Symbol	Turnover	TradeCountThs	Type	Exchange	Name
+AAL	621	131	CS	XNAS	American Airlines Group Inc.
+ABBV	918	74	CS	XNYS	AbbVie Inc.
+ABT	637	62	CS	XNYS	Abbott Laboratories
+ACN	728	43	CS	XNYS	Accenture Plc
+ADBE	1398	74	CS	XNAS	Adobe Inc.
+AFL	183	32	CS	XNYS	Aflac Inc.
+AIG	266	44	CS	XNYS	American International Group, Inc.
+AMAT	943	91	CS	XNAS	APPLIED MATERIALS INC
+AMD	6542	445	CS	XNAS	ADVANCED MICRO DEVICES
+AMGN	687	47	CS	XNAS	AMGEN INC
+AMT	469	35	CS	XNYS	American Tower Corporation
+AXP	607	53	CS	XNYS	American Express Company
+AZN	379	52	CS	XNYS	AstraZeneca PLC
+BA	2249	138	CS	XNYS	Boeing Company
+BABA	2738	201	ADRC	XNYS	Alibaba Group Holding Limited American Depositary Shares, each represents eight Ordinary Shares
+BAC	1671	181	CS	XNYS	Bank of America Corporation
+BBY	249	40	CS	XNYS	Best Buy Company, Inc.
+BIDU	607	56	ADRC	XNAS	Baidu, Inc.
+BK	250	45	CS	XNYS	Bank of New York Mellon Corporation
+BMY	721	89	CS	XNYS	Bristol-Myers Squibb Co.
+BP	324	56	ADRC	XNYS	BP p.l.c.
+BRK.B	1460	77	CS	XNYS	Berkshire Hathaway Class B
+BSX	445	61	CS	XNYS	Boston Scientific Corp.
+C	1110	130	CS	XNYS	Citigroup Inc.
+CCL	610	140	CS	XNYS	Carnival Corporation
+CMCSA	856	114	CS	XNAS	Comcast Corp
+COF	416	45	CS	XNYS	Capital One Financial
+COP	611	78	CS	XNYS	ConocoPhillips
+COST	1284	67	CS	XNAS	Costco Wholesale Corp
+CRM	1556	102	CS	XNYS	Salesforce, Inc.
+CRWD	923	76	CS	XNAS	CrowdStrike Holdings, Inc. Class A Common Stock
+CSCO	1047	124	CS	XNAS	Cisco Systems, Inc. Common Stock (DE)
+CTSH	249	37	CS	XNAS	Cognizant Technology Solutions
+CVS	589	75	CS	XNYS	CVS Health Corporation
+CVX	1271	112	CS	XNYS	CHEVRON CORPORATION
+D	275	43	CS	XNYS	Dominion Energy, Inc Common Stock
+DAL	527	103	CS	XNYS	Delta Air Lines, Inc.
+DHI	326	42	CS	XNYS	D.R. Horton Inc.
+DIA	1444	53	ETF	ARCX	State Street SPDR Dow Jones Industrial Average ETF Trust
+DIS	1378	137	CS	XNYS	The Walt Disney Company
+EBAY	364	64	CS	XNAS	EBAY INC
+EEM	1653	55	ETF	ARCX	ISHARES MSCI EMERGING MARKETS ETF
+EFA	1486	50	ETF	ARCX	iShares MSCI EAFE ETF
+ENPH	479	61	CS	XNAS	Enphase Energy, Inc.
+EOG	377	49	CS	XNYS	EOG Resources, Inc.
+ETSY	355	53	CS	XNYS	Etsy, Inc.
+FIS	369	43	CS	XNYS	Fidelity National Information Services, Inc.
+FXI	1118	61	ETF	ARCX	iShares China Large-Cap ETF
+GDX	899	106	ETF	ARCX	VanEck Gold Miners ETF
+GDXJ	335	49	ETF	ARCX	VanEck Junior Gold Miners ETF
+GILD	635	76	CS	XNAS	GILEAD SCIENCES INC
+GIS	263	42	CS	XNYS	General Mills, Inc.
+GLD	1915	80	ETV	ARCX	SPDR Gold Trust, SPDR Gold Shares
+GM	651	107	CS	XNYS	General Motors Company
+HD	1217	70	CS	XNYS	Home Depot, Inc.
+HPQ	265	61	CS	XNYS	HP Inc.
+HYG	2773	72	ETF	ARCX	iShares iBoxx $ High Yield Corporate Bond ETF
+IEMG	694	38	ETF	ARCX	iShares Core MSCI Emerging Markets ETF
+INTC	1730	238	CS	XNAS	INTEL CORP
+IVV	2538	61	ETF	ARCX	ISHARES CORE S&P 500 ETF
+IWM	6044	226	ETF	ARCX	ISHARES RUSSELL 2000 ETF
+JD	598	94	ADRC	XNAS	JD.com, Inc.
+JNJ	1318	96	CS	XNYS	Johnson & Johnson
+JPM	1916	135	CS	XNYS	JPMorgan Chase & Co.
+KHC	271	57	CS	XNAS	The Kraft Heinz Company Common Stock
+KMI	278	60	CS	XNYS	Kinder Morgan, Inc.
+KO	912	126	CS	XNYS	Coca-Cola Company
+KR	319	57	CS	XNYS	The Kroger Co.
+KRE	673	87	ETF	ARCX	State Street SPDR S&P Regional Banking ETF
+LMT	590	37	CS	XNYS	Lockheed Martin Corp.
+LOW	659	53	CS	XNYS	Lowe's Companies Inc.
+LQD	2368	62	ETF	ARCX	iShares iBoxx $ Investment Grade Corporate Bond ETF
+LULU	589	43	CS	XNAS	lululemon athletica inc.
+LUV	324	69	CS	XNYS	Southwest Airlines Co.
+LYFT	258	73	CS	XNAS	Lyft, Inc. Class A Common Stock
+MA	1265	61	CS	XNYS	Mastercard Incorporated
+MCD	803	57	CS	XNYS	McDonald's Corporation
+MDLZ	449	64	CS	XNAS	Mondelez International, Inc. Class A
+MDT	562	61	CS	XNYS	Medtronic plc
+MET	268	45	CS	XNYS	MetLife, Inc.
+MGM	223	58	CS	XNYS	MGM Resorts International
+MO	423	66	CS	XNYS	Altria Group, Inc.
+MPC	405	52	CS	XNYS	MARATHON PETROLEUM CORPORATION
+MRVL	717	112	CS	XNAS	Marvell Technology, Inc. Common Stock
+MS	737	88	CS	XNYS	MORGAN STANLEY
+MSFT	8159	377	CS	XNAS	MICROSOFT CORP
+MU	1749	183	CS	XNAS	Micron Technology, Inc.
+NEM	470	74	CS	XNYS	Newmont Corporation
+NKE	910	104	CS	XNYS	Nike, Inc.
+OKTA	285	38	CS	XNAS	Okta, Inc. Class A Common Stock
+ON	387	74	CS	XNAS	ON SEMICONDUCTOR CORP
+ORCL	1348	119	CS	XNYS	Oracle Corp
+PDD	882	96	ADRC	XNAS	PDD Holdings Inc. American Depositary Shares
+PG	1068	85	CS	XNYS	Procter & Gamble Company
+PINS	429	86	CS	XNYS	Pinterest, Inc. Class A Common Stock
+PM	543	49	CS	XNYS	Philip Morris International Inc.
+PSX	314	41	CS	XNYS	Phillips 66
+PYPL	1326	145	CS	XNAS	PayPal Holdings, Inc. Common Stock
+QCOM	1226	112	CS	XNAS	QUALCOMM INC
+QQQ	18047	429	ETF	XNAS	Invesco QQQ Trust, Series 1
+ROKU	789	76	CS	XNAS	Roku, Inc. Class A Common Stock
+SBUX	771	104	CS	XNAS	Starbucks Corp
+SCHW	616	81	CS	XNYS	The Charles Schwab Corporation
+SE	577	57	ADRC	XNYS	Sea Limited American Depositary Shares, each representing one Class A Ordinary Share
+SLB	465	89	CS	XNYS	SLB Limited
+SNAP	626	121	CS	XNYS	Snap Inc.
+SPXL	720	62	ETF	ARCX	Direxion Daily S&P 500  Bull 3x ETF
+SPY	34837	618	ETF	ARCX	State Street SPDR S&P 500 ETF Trust
+TFC	321	60	CS	XNYS	Truist Financial Corporation
+TGT	696	67	CS	XNYS	Target Corporation
+TJX	486	59	CS	XNYS	TJX Companies, Inc. (The)
+TLT	2724	111	ETF	XNAS	iShares 20+ Year Treasury Bond ETF
+TMO	821	37	CS	XNYS	Thermo Fisher Scientific, Inc.
+TMUS	720	58	CS	XNAS	T-Mobile US, Inc.
+TSM	1557	146	ADRC	XNYS	Taiwan Semiconductor Manufacturing Company Ltd.
+TXN	921	73	CS	XNAS	Texas Instruments Incorporated
+UAL	598	98	CS	XNAS	United Airlines Holdings, Inc. Common Stock
+UBER	1147	165	CS	XNYS	Uber Technologies, Inc.
+UNH	1900	93	CS	XNYS	UNITEDHEALTH GROUP INCORPORATED (Delaware)
+UNP	635	46	CS	XNYS	Union Pacific Corp.
+UPS	590	58	CS	XNYS	United Parcel Service, Inc. Class B
+USB	386	69	CS	XNYS	U.S. Bancorp
+V	1775	103	CS	XNYS	VISA Inc.
+VALE	398	66	ADRC	XNYS	VALE S.A.
+VLO	394	49	CS	XNYS	Valero Energy Corporation
+VNQ	425	50	ETF	ARCX	Vanguard Real Estate ETF
+VOO	2306	119	ETF	ARCX	Vanguard S&P 500 ETF
+VTI	852	66	ETF	ARCX	VANGUARD TOTAL STOCK MARKET ETF
+VWO	518	42	ETF	ARCX	Vanguard FTSE Emerging Markets ETF
+VZ	911	113	CS	XNYS	VERIZON COMMUNICATIONS
+WDAY	479	37	CS	XNAS	Workday, Inc. Class A Common Stock
+WFC	1084	141	CS	XNYS	Wells Fargo & Co.
+WMB	263	56	CS	XNYS	Williams Companies Inc.
+WYNN	265	39	CS	XNAS	WYNN RESORTS LTD
+XBI	826	90	ETF	ARCX	State Street SPDR S&P Biotech ETF
+XLF	1833	95	ETF	ARCX	State Street Financial Select Sector SPDR ETF
+XLI	1150	94	ETF	ARCX	State Street Industrial Select Sector SPDR ETF
+XLP	907	65	ETF	ARCX	State Street Consumer Staples Select Sector SPDR ETF
+XLV	1273	90	ETF	ARCX	State Street Health Care Select Sector SPDR ETF
+XOM	1701	160	CS	XNYS	Exxon Mobil Corporation
+ZM	851	74	CS	XNAS	Zoom Communications, Inc. Class A Common Stock
+ZS	399	38	CS	XNAS	Zscaler, Inc. Common Stock
