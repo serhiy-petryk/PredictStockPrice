@@ -1,4 +1,4 @@
-SQL:
+﻿SQL:
 ====
 select a.*, c.Type, c.Exchange, c.Name from
 (select Symbol, ROUND(AVG([low]*[volume])/1000000,0) Turnover, AVG(TradeCount)/1000 TradeCountThs
