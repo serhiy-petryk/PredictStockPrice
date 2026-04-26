@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.36227.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PredictStockPrice", "PredictStockPrice\PredictStockPrice.csproj", "{1F1A4441-C564-489C-B634-1B70F90CB4B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PredictStockPriceNet", "PredictStockPriceNet\PredictStockPriceNet.csproj", "{490D8C9A-6EB7-4CB7-83BD-C7B504A879B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C4C9C7AA-6E43-49BB-B801-483D7CC26AED}"
+	ProjectSection(SolutionItems) = preProject
+		Comment.txt = Comment.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F1A4441-C564-489C-B634-1B70F90CB4B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F1A4441-C564-489C-B634-1B70F90CB4B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F1A4441-C564-489C-B634-1B70F90CB4B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F1A4441-C564-489C-B634-1B70F90CB4B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{490D8C9A-6EB7-4CB7-83BD-C7B504A879B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{490D8C9A-6EB7-4CB7-83BD-C7B504A879B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{490D8C9A-6EB7-4CB7-83BD-C7B504A879B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{490D8C9A-6EB7-4CB7-83BD-C7B504A879B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9949D81E-27C0-4CEE-84E9-B8EB7E53D23B}
+	EndGlobalSection
+EndGlobal
