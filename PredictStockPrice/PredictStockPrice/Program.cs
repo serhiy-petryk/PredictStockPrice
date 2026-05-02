@@ -14,7 +14,8 @@ namespace PredictStockPrice
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            var data = Helper.DbHelper.GetData();
+            // var data = Helper.DbHelper.GetData();
+            Actions.ALGLIB_SSAStock.Execute();
 
             Application.Run(new Form1());
         }

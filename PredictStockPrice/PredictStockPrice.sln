@@ -5,13 +5,15 @@ VisualStudioVersion = 16.0.36227.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PredictStockPrice", "PredictStockPrice\PredictStockPrice.csproj", "{1F1A4441-C564-489C-B634-1B70F90CB4B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PredictStockPriceNet", "PredictStockPriceNet\PredictStockPriceNet.csproj", "{490D8C9A-6EB7-4CB7-83BD-C7B504A879B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PredictStockPriceNet", "PredictStockPriceNet\PredictStockPriceNet.csproj", "{490D8C9A-6EB7-4CB7-83BD-C7B504A879B6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C4C9C7AA-6E43-49BB-B801-483D7CC26AED}"
 	ProjectSection(SolutionItems) = preProject
 		Comment.txt = Comment.txt
 		Tickers.txt = Tickers.txt
 	EndProjectSection
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonApplication1", "PythonApplication1\PythonApplication1.pyproj", "{998BCD23-29BE-4273-8538-C99CD8D45FB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,8 @@ Global
 		{490D8C9A-6EB7-4CB7-83BD-C7B504A879B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{490D8C9A-6EB7-4CB7-83BD-C7B504A879B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{490D8C9A-6EB7-4CB7-83BD-C7B504A879B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{998BCD23-29BE-4273-8538-C99CD8D45FB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{998BCD23-29BE-4273-8538-C99CD8D45FB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
