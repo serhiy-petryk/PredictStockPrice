@@ -93,18 +93,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ItemStockOriginal.cs" />
     <Compile Include="ItemStock.cs" />
+    <Compile Include="ItemStocksOriginal.cs" />
     <Compile Include="ItemStocks.cs" />
+    <Compile Include="ProgramOriginal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Data\StockTest.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Data\StockTrain.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
