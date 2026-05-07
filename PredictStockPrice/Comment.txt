@@ -46,5 +46,8 @@ Retrain urls:
 2. https://stackoverflow.com/questions/57117967/detectspikebyssa-get-model-parameters-and-retrain-it-ml-net-v1-2-0
 3. https://github.com/dotnet/docs/blob/main/docs/machine-learning/resources/tasks.md
 
+Tutorials:
+==========
+1. https://learn.microsoft.com/en-us/dotnet/machine-learning/tutorials/
 
 Picture MachineLearningAlgorithms.jpg copied from https://vk.com/wall-61281696_31302 (Metanit)
