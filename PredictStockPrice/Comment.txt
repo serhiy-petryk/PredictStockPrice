@@ -12,3 +12,22 @@
 	Instruction: https://github.com/albertomonari/New-York-Stock-Price-Prediction/blob/main/NY%20Stock%20Price%20Prediction.html
 6. ML.NET, SSA, High frequency trading https://github.com/AnalyseOptimize
 	https://github.com/AnalyseOptimize/Singular-Spectrum-Analysis
+
+Urls:
+=====
+1. https://subscription.packtpub.com/book/data/9781789801781/11/ch11lvl1sec46/creating-the-stock-price-estimator-application?__cf_chl_tk=IGK_SuiKFIdusbfwU1Wpn2FwqrCvycRQhONA6kDhgQE-1777886501-1.0.1.1-Fty2vRrEcZy7u8aXNAf.si94r..HKR4XseKgW1Ets1Q
+
+2. https://www.google.com/search?q=Create+A+Stock+Predictor+With+C%23+and+ML+NET&oq=Create+A+Stock+Predictor+With+C%23+and+ML+NET
+
+3. https://www.google.com/search?q=ml+net+stock+price+prediction
+Core ML.NET Techniques
+	Time Series Forecasting:
+		Uses the ForecastBySSA (Singular Spectrum Analysis) algorithm for univariate forecasting.
+		Ideal for predicting future values based solely on historical order and time-sequenced data.
+	Regression Analysis:
+		Used to predict a continuous value (the stock price) based on multiple related features.
+		Common algorithms include Online Gradient Descent (suited for real-time predictions) and 
+		FastTree or LightGBM for more complex, non-linear relationships.
+	Deep Learning:
+		ML.NET supports integrating TensorFlow models, allowing for advanced architectures like 
+		LSTM (Long Short-Term Memory) which are highly effective for sequence modeling in stock prices.
