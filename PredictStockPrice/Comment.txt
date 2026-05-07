@@ -31,3 +31,15 @@ Core ML.NET Techniques
 	Deep Learning:
 		ML.NET supports integrating TensorFlow models, allowing for advanced architectures like 
 		LSTM (Long Short-Term Memory) which are highly effective for sequence modeling in stock prices.
+
+1. https://www.quantinsti.com/articles/machine-learning-trading-predict-stock-prices-regression
+2. https://itnext.io/overview-of-ml-net-regression-trainer-options-cab39d46dd33
+	OnlineGradientDescentTrainer => Good for: Real-time stock price prediction
+3. https://github.com/m-markov/ml_net
+4. https://stackoverflow.com/questions/75084313/ml-net-c-sharp-predicting-stock-price-using-historical-prices
+
+Retrain urls:
+=============
+1. https://learn.microsoft.com/en-us/dotnet/machine-learning/how-to-guides/retrain-model-ml-net
+2. https://stackoverflow.com/questions/57117967/detectspikebyssa-get-model-parameters-and-retrain-it-ml-net-v1-2-0
+3. https://github.com/dotnet/docs/blob/main/docs/machine-learning/resources/tasks.md
