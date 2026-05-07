@@ -1,4 +1,4 @@
-﻿// Original: https://www.quantinsti.com/articles/machine-learning-trading-predict-stock-prices-regression
+﻿// Original: https://www.c-sharpcorner.com/article/getting-started-with-machine-learning-dotnet-ml-net/
 
 using System;
 using System.IO;
