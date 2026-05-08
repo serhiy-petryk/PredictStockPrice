@@ -48,6 +48,9 @@ Retrain urls:
 
 Tutorials:
 ==========
-1. https://learn.microsoft.com/en-us/dotnet/machine-learning/tutorials/
+1.1 https://learn.microsoft.com/en-us/dotnet/machine-learning/
+1.2 https://learn.microsoft.com/en-us/dotnet/machine-learning/tutorials/
+2. Code: https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/TaxiFarePrediction
+3. Code: https://github.com/dotnet/machinelearning-samples
 
 Picture MachineLearningAlgorithms.jpg copied from https://vk.com/wall-61281696_31302 (Metanit)
