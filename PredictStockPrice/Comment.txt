@@ -58,6 +58,7 @@ Picture MachineLearningAlgorithms.jpg copied from https://vk.com/wall-61281696_3
 ToDo:
 =====
 1. First app: taxi price. Investigate lib version, approaches.
+	https://learn.microsoft.com/en-us/dotnet/machine-learning/tutorials/predict-prices
 2. TimeSeries app on market data.
 3. Use Model.Net to select the best algorithm.
 4. Define which indicators are best to predict a trend:

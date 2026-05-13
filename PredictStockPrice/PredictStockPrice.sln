@@ -18,6 +18,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonApplication1", "Pytho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLNETStock", "MLNETStock\MLNETStock.csproj", "{60AE96C6-C86C-4996-BDF2-EA030454F8EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLNETTaxi", "MLNETTaxi\MLNETTaxi.csproj", "{65EA365A-BE01-43FF-AF6F-F98C6769DAE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{60AE96C6-C86C-4996-BDF2-EA030454F8EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60AE96C6-C86C-4996-BDF2-EA030454F8EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60AE96C6-C86C-4996-BDF2-EA030454F8EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65EA365A-BE01-43FF-AF6F-F98C6769DAE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65EA365A-BE01-43FF-AF6F-F98C6769DAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65EA365A-BE01-43FF-AF6F-F98C6769DAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65EA365A-BE01-43FF-AF6F-F98C6769DAE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
