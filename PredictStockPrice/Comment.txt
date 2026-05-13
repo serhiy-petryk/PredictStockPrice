@@ -54,3 +54,13 @@ Tutorials:
 3. Code: https://github.com/dotnet/machinelearning-samples
 
 Picture MachineLearningAlgorithms.jpg copied from https://vk.com/wall-61281696_31302 (Metanit)
+
+ToDo:
+=====
+1. First app: taxi price. Investigate lib version, approaches.
+2. TimeSeries app on market data.
+3. Use Model.Net to select the best algorithm.
+4. Define which indicators are best to predict a trend:
+	https://stackoverflow.com/questions/75390841/ml-net-c-sharp-finds-out-which-indicators-are-best-to-predict-a-trend
+4. Investigate OnlineGradientDescent trainer for market data.
+4. Retreat app.
