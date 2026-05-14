@@ -55,6 +55,12 @@ Tutorials:
 
 Picture MachineLearningAlgorithms.jpg copied from https://vk.com/wall-61281696_31302 (Metanit)
 
+Info:
+=====
+1. PLplot - very interesting.
+	PLplot is a cross-platform software package for creating scientific plots whose (UTF-8) plot symbols and text are limited in practice only by what Unicode-aware system fonts are installed on a user's computer.
+	Example E:\Apps\original\machinelearning-samples-main\samples\csharp\getting-started\Regression_TaxiFarePrediction\TaxiFarePrediction\TaxiFarePredictionConsoleApp\Program.cs
+
 ToDo:
 =====
 1. First app: taxi price. Investigate lib version, approaches.
