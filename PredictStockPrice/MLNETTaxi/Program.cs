@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using Microsoft.ML;
+using Microsoft.ML.Transforms;
 using MLNETTaxi.Models;
 
 namespace MLNETTaxi
@@ -38,7 +39,7 @@ namespace MLNETTaxi
                 // Choose a learning algorithm
                 .Append(mlContext.Regression.Trainers.FastTree());
 
-            var x1 = mlContext.Transforms.CopyColumns(outputColumnName: "Label", inputColumnName: "FareAmount");
+            ColumnCopyingEstimator x1 = mlContext.Transforms.CopyColumns(outputColumnName: "Label", inputColumnName: "FareAmount");
             var x2 = x1.Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "VendorIdEncoded",
                 inputColumnName: "VendorId"));
             var x3 = x2.Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "RateCodeEncoded",

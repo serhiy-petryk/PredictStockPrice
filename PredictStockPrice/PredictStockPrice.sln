@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLNETStock", "MLNETStock\ML
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLNETTaxi", "MLNETTaxi\MLNETTaxi.csproj", "{65EA365A-BE01-43FF-AF6F-F98C6769DAE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLNETTaxiNet", "MLNETTaxiNet\MLNETTaxiNet.csproj", "{25141547-C2E3-44D1-936B-3F98BE024E6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{65EA365A-BE01-43FF-AF6F-F98C6769DAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65EA365A-BE01-43FF-AF6F-F98C6769DAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65EA365A-BE01-43FF-AF6F-F98C6769DAE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25141547-C2E3-44D1-936B-3F98BE024E6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25141547-C2E3-44D1-936B-3F98BE024E6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25141547-C2E3-44D1-936B-3F98BE024E6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25141547-C2E3-44D1-936B-3F98BE024E6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
